@@ -1,543 +1,126 @@
-
 <!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="website.css" type="text/css"  media="all">
+      <p> </p>
+    <title>lloyd steele</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yuan Yuan's Homepage</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <!--<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.7.5-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
-  <script defer src="font-awesome-5.9.0/js/brands.min.js"></script>
-  <script defer src="font-awesome-5.9.0/js/fontawesome.min.js"></script>
-    <style>
-      .red {
-        color: #ff0000;
-        font-style: normal;
+  <body>
+<body class="dark">
+    <h2> lloyd steele</h2>
+    <h3 color: gray> derm registrar |  academic clinical fellow (ml + genomics)</h3>
+    <br>
+    <br>
+
+      <!-- main menu -->
+    	<nav>
+    		<ul class="vertical-menu scrollspy">
+          <li><a href="dermatology.html" class="hyperlink">dermatology, histopath, and surgery</a></li>
+          <li><a href="currentprojects.html" class="hyperlink">current projects</a></li>
+          <li><a href="completedprojects.html" class="hyperlink">completed projects</a></li>
+          <li><a href="portugues.html" class="hyperlink">português</a></li>
+          <li><a href="espanol.html" class="hyperlink">español</a></li>
+          <li><a href="mandarin.html" class="hyperlink">中文</a></li>
+          <li><a href="books.html" class="hyperlink">books</a></li>
+    		</ul>
+    	</nav>
+
+
+
+    <p>
+      <br>
+      <h4 id="s1">&#8226important dates</h3>
+birthday party* (*=researchblock)
+<div id="countdown">
+  <script>
+  var end = new Date('02/05/2022 10:10 AM');
+  var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+      var timer;
+
+      function showRemaining() {
+          var now = new Date();
+          var distance = end - now;
+          if (distance < 0) {
+
+              clearInterval(timer);
+              document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+              return;
+          }
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+
+          document.getElementById('countdown').innerHTML = days + 'days ';
+          document.getElementById('countdown').innerHTML += hours + 'hrs ';
+          document.getElementById('countdown').innerHTML += minutes + 'mins ';
+          document.getElementById('countdown').innerHTML += seconds + 'secs';
       }
 
-      .content figure {
-        height: 8.5rem;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        border: solid #d2d2d2 1px;
-      }
+      timer = setInterval(showRemaining, 1000);
+  </script>
+  </div>
+  <div>
 
-      #sidebar {
-        width: 80%;
-      }
+  </div>
 
-      <!--#sidebar .menu-list a.is-active {-->
-      <!--  background-color: #9dd5d8;-->
-      <!--}-->
+  <p>
+      </p>
+    End of research block
 
-      @media screen and (min-width: 769px), print {
-        .column.is-2_5, .column.is-2-tablet {
-          flex: none;
-          width: 20%;
+  <div id="countdown2">
+    <script>
+    var end2 = new Date('05/03/2021 10:1 AM');
+    var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end2 - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown2').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown2').innerHTML = days + 'days ';
+            document.getElementById('countdown2').innerHTML += hours + 'hrs ';
+            document.getElementById('countdown2').innerHTML += minutes + 'mins ';
+            document.getElementById('countdown2').innerHTML += seconds + 'secs';
         }
-      }
-</style>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2_5">
-          <div class="sticky">
-            <figure class="image" style="width: 10rem;">
-              <img class="is-rounded" src="images/psb4.jpg">
-            </figure>
-            <div class="content">
-              <h3 style="margin-top: 1em">Yuan Yuan 袁园</h3>
-              <h6>CSAIL, MIT</h6>
-              <h6>32-G916, 32 Vassar St.</h6>
-              <h6>Cambridge, MA 02139</h6>
-            </div>
-            <!-- details -->
-            <div class="details">
-              <h3>EMAIL</h3>
-              <p><a href="mailto:miayuan@mit.edu">miayuan[at]mit[dot]edu</a></p>
-            </div>
-            <!-- social network icons -->
-            <div class="social">
-              <a href="https://github.com/yyuanad" target="_blank">
-                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://scholar.google.com/citations?user=9tI89HMAAAAJ" target="_blank">
-                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://www.linkedin.com/in/yuan-yuan-96451747/" target="_blank">
-                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <!--<a href="https://www.facebook.com/tianweishen.shen" target="_blank">-->
-                <!--<span class="fab fa-facebook fa-2x" style="display:inline; text-decoration: none"></span>-->
-              <!--</a>-->
-              <!--<a href="https://twitter.com/HegongEngineer" target="_blank">-->
-                <!--<span class="fab fa-twitter fa-2x" style="display:inline; text-decoration: none"></span>-->
-              <!--</a>-->
-            </div>
+        timer = setInterval(showRemaining, 1000);
+    </script>
+    </div>
+    <div>
 
+    </div>
+    <div>
 
-            <div id="sidebar" class="menu sticky is-hidden-mobile">
-              <p class="menu-label"><b>Quick Links</b></p>
-              <ul class="menu-list">
-                <li><a href="#intro">About Me</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#miscellaneous">Miscellaneous</a></li>
-              </ul>
-              <div class="column" style="width: 40%">
-                <script type='text/javascript' id='clstr_globe' src='//cdn.clustrmaps.com/globe.js?d=VjnfOejvIIrpggl9NSOiRcw0OJHJ0QGzEhq2kCXwP94' async></script>
-              </div>
-            </div>
-          </div>
+      <p>
 
 
 
-        </div>
-        <div class="column right-panel">
-          <div class="content">
-
-
-            <!--About Me-->
-            <h3 id="intro">About Me</h3>
-            <p>I am a Postdoctoral Research Associate at <a href="https://www.csail.mit.edu/" target="_blank">Computer Science & Artificial Intelligence Lab</a>
-              of <a href="http://www.mit.edu/" target="_blank">Massachusetts Institute of Technology</a>, working with Prof. <a href="http://people.csail.mit.edu/dina/" target="_blank">Dina Katabi</a>.
-              I obtained Ph.D. degree in ECE department from <a href="http://www.ust.hk/" target="_blank">Hong Kong University of Science and Technology</a>. My supervisor was Prof. <a href="https://sites.google.com/view/dyyeung" target="_blank">Dit-Yan Yeung</a>.
-              I was a visiting research scholar working with Prof. <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a> in the <a href="https://www.ri.cmu.edu/" target="_blank">Robotics Institute</a> of <a href="http://www.cs.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
-              Before that, I received my B.S. degree in EE department from Huazhong University of Science and Technology.
-
-            </p>
-
-
-            <!--Research Interests-->
-            <h3 id="research">Research Interests</h3>
-            <ul>
-              <li>Learning-based wireless sensing, with application to privacy-preserved healthcare and human sensing</li>
-              <li>General video understanding, including video object detection, temporal action localization and human action recognition</li>
-              <li>Learning with sequential data, e.g. speech, video, breathing</li>
-              <li>Deep learning, weakly-supervised learning, unsupervised or self-supervised learning</li>
-
-            </ul>
-
-
-
-            <!--News-->
-            <h3 id="news">
-              News
-            </h3>
-            <ul>
-              <li><span>[12/2020] Our paper <a href="https://arxiv.org/pdf/2012.09962.pdf" target="_blank">Information-Preserving Contrastive Learning for Self-Supervised Representations</a> is on arXiv.</span></li>
-              <li><span>[09/2020] One paper is accepted to NeurIPS 2020.</span></li>
-              <li><span>[08/2020] <b>RF-Diary (ECCV 2020 Oral)</b> was covered by:
-                <a href="https://techcrunch.com/2020/08/24/mit-wireless-system-can-monitor-what-care-facility-residents-are-doing-while-preserving-privacy/" target="_blank">TechCrunch</a>,
-                <a href="https://www.engadget.com/mit-wireless-signals-monitoring-machine-learning-rf-diary-040049578.html" target="_blank">Engadget</a>,
-                <a href="https://venturebeat.com/2020/08/24/mit-csails-rf-diary-monitors-people-through-walls-and-in-total-darkness/" target="_blank">VentureBeat</a>,
-                <a href="https://www.dailymail.co.uk/sciencetech/article-8665391/AI-device-nursing-homes-monitor-elderly-residents-using-radio-waves.html" target="_blank">DailyMail</a>,
-                <a href="https://hothardware.com/news/mit-project-can-track-people-through-walls-and-darkness" target="_blank">Hot Hardware</a>,
-                <a href="https://www.csail.mit.edu/news/device-nursing-homes-can-monitor-residents-activities-permission-and-without-video" target="_blank">CSAIL News</a>, and other media outlets.</span></li>
-              <li><span>[07/2020] <a href="http://rf-diary.csail.mit.edu/" target="_blank">In-home Daily-Life Captioning Using Radio Signals</a> is accepted to ECCV 2020 as oral presentation.</span></li>
-              <li><span>[06/2020] <b>RF-ReID (CVPR 2020)</b> was covered by:
-                <a href="https://techcrunch.com/2020/06/16/mits-new-way-to-remotely-monitor-vital-signs-over-time-could-help-with-early-covid-19-detection-in-care-homes/" target="_blank">TechCrunch</a>,
-                <a href="https://www.yahoo.com/lifestyle/mits-way-remotely-monitor-vital-132517815.html" target="_blank">Yahoo News</a>,
-                <a href="https://www.healthcareitnews.com/news/mit-csail-machine-learning-tool-could-help-nursing-homes-predict-covid-19" target="_blank">Healthcare IT News</a>,
-                <a href="https://www.csail.mit.edu/news/home-health-device-uses-wireless-signals-identify-person-its-seen" target="_blank">CSAIL News</a>, and other media outlets.</span></li>
-              <li><span>[02/2020] <a href="http://rf-reid.csail.mit.edu/" target="_blank">Learning Longterm Representations for Person Re-Identification Using Radio Signals</a> is accepted to CVPR 2020.</span></li>
-
-            </ul>
-
-
-            <!--Selected Publications-->
-            <h3 id="publications">Selected Publications <span style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .1rem;"><a href="https://scholar.google.com/citations?user=9tI89HMAAAAJ" target="_blank">[Full List]</a></span></h3>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2020_neurips_rank_1_lattice.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Subgroup-based Rank-1 Lattice Quasi-Monte Carlo</b><br>
-                    <a href="https://yueminglyu.github.io/" target="_blank" class="dark">Yueming Lyu</a>, <b>Yuan Yuan</b> and Ivor W. Tsang<br>
-                    <i>Thirty-fourth Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2020</i><br>
-                    <a href="https://proceedings.neurips.cc/paper/2020/file/456048afb7253926e1fbb7486e699180-Paper.pdf" target="_blank">[Paper]</a>
-                    <a href="https://proceedings.neurips.cc/paper/2020/file/456048afb7253926e1fbb7486e699180-Supplemental.zip" target="_blank">[Supplemental]</a>
-                    <a href="https://arxiv.org/pdf/2011.06446.pdf" target="_blank">[arXiv]</a>
-                    <a href="papers/poster_2020_neurips_Lattice.pdf" target="_blank">[Poster]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2020_eccv_rf_diary.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>In-home Daily-Life Captioning Using Radio Signals</b><br>
-                    <a href="http://lijiefan.me/" target="_blank" class="dark">Lijie Fan*</a>, <a href="http://www.tianhongli.me/" target="_blank" class="dark">Tianhong Li*</a>, <b>Yuan Yuan</b> and Dina Katabi<br>
-                    <i>European Conference on Computer Vision (<b>ECCV</b>), 2020</i><br>
-                    <a href="http://rf-diary.csail.mit.edu/" target="_blank">[Project Page]</a>
-                    <a href="http://rf-diary.csail.mit.edu/papers/rfdiary_eccv.pdf" target="_blank">[PDF]</a>
-                    <a href="https://arxiv.org/abs/2008.10966" target="_blank">[arXiv]</a>
-                    <a href="http://rf-diary.csail.mit.edu/slides/longtalk.pdf" target="_blank">[Slides]</a>
-                    <a href="https://www.youtube.com/watch?v=j528nQs4_a8&feature=youtu.be" target="_blank">[Demo]</a>
-                    <a href="https://www.youtube.com/watch?v=LA-JW4_ovAQ&feature=youtu.be" target="_blank">[Video]</a>
-                    <a href="https://www.youtube.com/watch?v=S2Y-zPJnl9U&feature=youtu.be" target="_blank">[Talk]</a>
-                    <a href="https://www.csail.mit.edu/news/device-nursing-homes-can-monitor-residents-activities-permission-and-without-video" target="_blank">[CSAIL News]</a>
-                    <a href="https://techcrunch.com/2020/08/24/mit-wireless-system-can-monitor-what-care-facility-residents-are-doing-while-preserving-privacy/" target="_blank">[TechCrunch]</a>
-                    <a href="https://www.engadget.com/mit-wireless-signals-monitoring-machine-learning-rf-diary-040049578.html" target="_blank">[Engadget]</a>
-                    <a href="https://venturebeat.com/2020/08/24/mit-csails-rf-diary-monitors-people-through-walls-and-in-total-darkness/" target="_blank">[VentureBeat]</a><br>
-                    <em class="red"><b>Oral Presentation (2%)</b></em><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2020_cvpr_rf_reid.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Learning Longterm Representations for Person Re-Identification Using Radio Signals</b><br>
-                    <a href="http://lijiefan.me/" target="_blank" class="dark">Lijie Fan*</a>, <a href="http://www.tianhongli.me/" target="_blank" class="dark">Tianhong Li*</a>, <a href="https://rongyaofang.github.io/" target="_blank" class="dark">Rongyao Fang*</a>, Rumen Hristov, <b>Yuan Yuan</b> and Dina Katabi<br>
-                    <i>Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020</i><br>
-                    <a href="http://rf-reid.csail.mit.edu/" target="_blank">[Project Page]</a>
-                    <a href="http://rf-reid.csail.mit.edu/papers/rfreid_cvpr.pdf" target="_blank">[PDF]</a>
-                    <a href="https://arxiv.org/abs/2004.01091" target="_blank">[arXiv]</a>
-                    <a href="https://www.youtube.com/watch?v=oYv30obQ8P4&feature=youtu.be" target="_blank">[Video]</a>
-                    <a href="https://www.csail.mit.edu/news/home-health-device-uses-wireless-signals-identify-person-its-seen" target="_blank">[CSAIL News]</a>
-                    <a href="https://techcrunch.com/2020/06/16/mits-new-way-to-remotely-monitor-vital-signs-over-time-could-help-with-early-covid-19-detection-in-care-homes/" target="_blank">[TechCrunch]</a>
-                    <a href="https://www.yahoo.com/lifestyle/mits-way-remotely-monitor-vital-132517815.html" target="_blank">[Yahoo News]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2019_iclr_maan.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Marginalized Average Attentional Network For Weakly-Supervised Learning</b><br>
-                    <b>Yuan Yuan</b>, <a href="https://yueminglyu.github.io/" target="_blank" class="dark">Yueming Lyu</a>, <a href="https://xishen0220.github.io/" target="_blank" class="dark">Xi Shen</a>, Ivor W. Tsang and Dit-Yan Yeung<br>
-                    <i>International Conference on Learning Representations (<b>ICLR</b>), 2019</i><br>
-                    <a href="https://arxiv.org/pdf/1905.08586.pdf" target="_blank">[PDF]</a>
-                    <a href="https://github.com/yyuanad/MAAN" target="_blank">[Code]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2019_jmlr_yueming.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Efficient Batch Black-box Optimization with Deterministic Regret Bounds</b><br>
-                    <a href="https://yueminglyu.github.io/" target="_blank" class="dark">Yueming Lyu</a>, <b>Yuan Yuan</b> and Ivor W. Tsang<br>
-                    <i> Under Review (<b>JMLR</b>), 2019</i><br>
-                    <a href="https://arxiv.org/pdf/1905.10041.pdf" target="_blank">[arXiv]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2017_iccv_TD_GraphLSTM.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Temporal Dynamic Graph LSTM for Action-driven Video Object Detection</b><br>
-                    <b>Yuan Yuan</b>, Xiaodan Liang, Xiaolong Wang, Dit-Yan Yeung and Abhinav Gupta<br>
-                    <i>International Conference on Computer Vision (<b>ICCV</b>), 2017</i><br>
-                    <a href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Yuan_Temporal_Dynamic_Graph_ICCV_2017_paper.pdf" target="_blank">[PDF]</a>
-                    <a href="https://github.com/xiaolonw/CharadesDet" target="_blank">[Dataset]</a>
-                    <a href="bib/2017_iccv_TD_GraphLSTM.bib" target="_blank">[BibTeX]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2016_tcsvt_amin.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Adaptive Block Coding Order for Intra Prediction in HEVC</b><br>
-                    Amin Zheng, <b>Yuan Yuan</b>, Jiantao Zhou, Yuanfang Guo, Haitao Yang and Oscar C. Au<br>
-                    <i>IEEE Transaction on Circuits and Systems for Video Technology, vol.26, no.11, pp.2152-2158, Nov. (<b>TCSVT</b>), 2016</i><br>
-                    <a href="papers/paper_2016_TCSVT_amin.pdf" target="_blank">[PDF]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2015_icassp_yuan.jpeg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Image Compression Via Dense Descriptors Assisted Synthesis</b><br>
-                    <b>Yuan Yuan</b>, Amin Zheng, Haitao Yang and Oscar C. Au<br>
-                    <i>International Conference on Acoustics, Speech and Signal Processing (<b>ICASSP</b>), 2015</i><br>
-                    <a href="papers/paper_2015_icassp_yuan.pdf" target="_blank">[PDF]</a><br>
-                    <em class="red"><b>Oral Presentation</b></em><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2015_icip_amin_mvf.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Motion Vector Fields Based Video Coding</b><br>
-                    Amin Zheng, <b>Yuan Yuan</b>, Hong Zhang, Haitao Yang, Pengfei Wan and Oscar C. Au<br>
-                    <i>International Conference on Image Processing (<b>ICIP</b>), 2015</i><br>
-                    <a href="papers/paper_2015_icip_amin_mvf.pdf" target="_blank">[PDF]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2015_icip_amin_of.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Motion Estimation Via Hierarchical Block Matching and Graph Cut</b><br>
-                    Amin Zheng, <b>Yuan Yuan</b>, Sunil Prasad Jaiswal and Oscar C. Au<br>
-                    <i>International Conference on Image Processing (<b>ICIP</b>), 2015</i><br>
-                    <a href="papers/paper_2015_icip_amin_of.pdf" target="_blank">[PDF]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2015_icip_yonggen.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Image Colorization Via Color Propagation and Rank Minimization</b><br>
-                    Yonggen Ling, Oscar C. Au, Jiahao Pang, Jin Zeng, <b>Yuan Yuan</b> and Amin Zheng<br>
-                    <i>International Conference on Image Processing (<b>ICIP</b>), 2015</i><br>
-                    <a href="papers/paper_2015_icip_yonggen_colorization.pdf" target="_blank">[PDF]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2014_icassp_yuan.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Image Compression Via Sparse Reconstruction</b><br>
-                    <b>Yuan Yuan</b>, Oscar C. Au, Amin Zheng and Haitao Yang<br>
-                    <i>International Conference on Acoustics, Speech and Signal Processing (<b>ICASSP</b>), 2014</i><br>
-                    <a href="papers/paper_2014_icassp_yuan.pdf" target="_blank">[PDF]</a>
-                    <a href="papers/poster_2014_icassp_yuan.pdf" target="_blank">[Poster]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/2014_icip_haiyan.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Natural Image Matting via Adaptive Local and Nonlocal Sample Clustering</b><br>
-                    Haiyan Yang, Oscar C. Au, <b>Yuan Yuan</b> and Wenxiu Sun<br>
-                    <i>International Conference on Image Processing (<b>ICIP</b>), 2014</i><br>
-                    <a href="papers/paper_2014_icip_haiyan_matting.pdf" target="_blank">[PDF]</a><br>
-                    <em class="red"><b>Top 10% Paper Award</b></em><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-
-            <h3 id="miscellaneous">
-              Honors and Awards (Selected)
-            </h3>
-            <ul>
-              <li>Ali Star, Alibaba Group, 2019.</li>
-              <li>Overseas Research Award for conducting research at Carnegie Mellon University, HKUST, 2016.</li>
-              <li>Meritorious Winner, Mathematical Contest in Modeling of America (MCM), 2011.</li>
-              <li>National Scholarship, Ministry of Education of P.R.China, 2009, 2010, 2011.</li>
-              <li>Microsoft Young Fellowship, Microsoft Research Asia, 2011.</li>
-            </ul>
-
-
-            <h3 >
-              Academic Services (Selected)
-            </h3>
-            <ul>
-              <li><b>Tutorial and Workshop</b></li>
-              PC Member of the IEEE International Conference on Computer Vision (ICCV) workshop, the first workshop on statistic deep learning in computer vision, 2019
-              <li><b>Conference Reviewer/PC Member</b></li>
-              International Conference on Learning Representations (ICLR), 2022 <br>
-              International Conference on Machine Learning (ICML), 2021 <br>
-              Annual Meeting of the Association for Computational Linguistics (ACL), 2021 <br>
-              IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, 2018, 2019, 2020, 2021 <br>
-              Neural Information Processing Systems (NeurIPS), 2020, 2021 <br>
-              European Conference on Computer Vision (ECCV), 2020 <br>
-              IEEE International Conference on Computer Vision (ICCV), 2017, 2019, 2021 <br>
-              AAAI Conference on Artificial Intelligence (AAAI), 2019, 2020, 2021 <br>
-              International Joint Conferences on Artificial Intelligence (IJCAI), 2017 <br>
-
-              <li><b>Journal Reviewer</b></li>
-              IEEE Transactions on Image Processing (TIP) <br>
-              IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) <br>
-              IEEE Transactions on Multimedia (TMM) <br>
-
-            </ul>
-
-
-
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="container">
-      <br><hr>
-      <div class="row" style="text-align: center">
-        © Copyright 2021 Yuan Yuan. Last updated: Jan 05, 2021.
-      </div>
-    </footer>
-  </section>
+    </p>
 
 
-  <script>
-
-    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
-
-    $('#sidebar').on('click', 'a', function(){
-      activate($(this))
-    });
-
-    $(window).on('resize', debounce(calculateBoundary, 300));
-
-    $(document).on('scroll', debounce(judgeScroll, 300));
-
-    calculateBoundary();
-    judgeScroll();
-
-    function  calculateBoundary() {
-      offsetList = $hashList.map(function(idx, ele){
-        return $(ele.hash).offset().top
-      });
-      maxScrollHeight = $(document).height() - $(window).height()
-    }
-
-    function judgeScroll() {
-      var tps = $("html").scrollTop()
-              ? $("html").scrollTop()
-              : $("body").scrollTop(),
-              len = offsetList.length;
-      if(tps >= maxScrollHeight-10){
-        activate($hashList.eq(len-1));
-        return
-      }
-      for(var i=0; i<len; i++){
-       if(tps+50<offsetList[i]){
-          activate($hashList.eq(Math.max(0,i-1)));
-          return
-        }
-      }
-    }
-
-    function activate(ele){
-      $hashList.removeClass('is-active');
-      ele.addClass('is-active');
-    }
-
-    function debounce(fn, delay) {
-      var timeout = null;
-      return function () {
-        var args = arguments;
-        var context = this;
-        if (!timeout) {
-          timeout = setTimeout(function () {
-            timeout = 0;
-            return fn.apply(context, args);
-          }, delay);
-        }
-      };
-    }
-
-
-
-  </script>
-
-
-</body>
-
+  </body>
+  </p>
 </html>
