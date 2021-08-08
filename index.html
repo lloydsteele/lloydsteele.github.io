@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="website.css" type="text/css"  media="all">
+      <p> </p>
+    <title>lloyd steele</title>
+
+  <body>
+<body class="dark">
+    <h2> lloyd steele</h2>
+    <h3 color: grey> derm registrar |  academic clinical fellow (ml + genomics)</h3>
+
+
+
+      <!-- main menu -->
+    	<nav>
+    		<ul class="vertical-menu scrollspy">
+          <li><a href="dermatology.html" class="hyperlink">dermatology, histopath, and surgery</a></li>
+          <li><a href="currentprojects.html" class="hyperlink">current projects</a></li>
+          <li><a href="completedprojects.html" class="hyperlink">completed projects</a></li>
+          <li><a href="portugues.html" class="hyperlink">português</a></li>
+          <li><a href="espanol.html" class="hyperlink">español</a></li>
+          <li><a href="mandarin.html" class="hyperlink">中文</a></li>
+          <li><a href="books.html" class="hyperlink">books</a></li>
+    		</ul>
+    	</nav>
+
+         <br>
+      <!--About Me-->
+       <h4 id="intro">&#8226About Me</h4>
+       <p>I am a third-year Dermatology resident and Academic Clinical Fellow at the <a href="https://www.qmul.ac.uk/blizard/" target="_blank">Blizard Institute</a>
+         and <a href="https://www.bartshealth.nhs.uk/" target="_blank">Barts</a>, working with Prof. <a href="https://www.qmul.ac.uk/blizard/all-staff/profiles/edel-otoole.html" target="_blank">Edel O'Toole</a>;
+         a fellow at the <a href="http://www.ukdctn.org/index.aspx" target="_blank">UK DCTN</a>, working with Prof. <a href="https://www.nottingham.ac.uk/medicine/people/hywel.williams" target="_blank">Hywel Williams</a>;
+         and an associate editor at the <a href="https://onlinelibrary.wiley.com/journal/13652230 target="_blank"><i>Clinical and Experimental Dermatology</i></a>.
+
+         My main interests research are in computational biology, computer vision, and evidence-based medicine. I plan to do an MSc after my third year of residency followed by a research fellowship in the US and ultimately a PhD, with the
+         goal of working in both clinical and academic Dermatology in the future.
+       </p>
+
+      <br>
+      <h4 id="s1">&#8226Important Dates</h3>
+<b  style="margin-left: 40px">birthday party*</b> (*=researchblock)
+<div id="countdown"  style="margin-left: 40px">
+  <script>
+  var end = new Date('02/05/2022 10:10 AM');
+  var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+      var timer;
+
+      function showRemaining() {
+          var now = new Date();
+          var distance = end - now;
+          if (distance < 0) {
+
+              clearInterval(timer);
+              document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+              return;
+          }
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+
+          document.getElementById('countdown').innerHTML = days + 'days ';
+          document.getElementById('countdown').innerHTML += hours + 'hrs ';
+          document.getElementById('countdown').innerHTML += minutes + 'mins ';
+          document.getElementById('countdown').innerHTML += seconds + 'secs';
+      }
+
+      timer = setInterval(showRemaining, 1000);
+  </script>
+  </div>
+    <b  style="margin-left: 40px">vacações</b>
+
+  <div id="countdown2"  style="margin-left: 40px">
+    <script>
+    var end2 = new Date('08/28/2021 10:1 AM');
+    var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end2 - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown2').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown2').innerHTML = days + 'days ';
+            document.getElementById('countdown2').innerHTML += hours + 'hrs ';
+            document.getElementById('countdown2').innerHTML += minutes + 'mins ';
+            document.getElementById('countdown2').innerHTML += seconds + 'secs';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    </script>
+    </div>
+    <div>
+      <!--Selected Publications-->
+      <br>
+                <h3 id="publications"> <h4 id="intro">&#8226Selected Publications <a href="https://www.researchgate.net/profile/Lloyd-Steele" target="_blank">[Full List]</a></span> </h4>
+
+                <article class="columns">
+                  <div class="column is-3">
+                    <figure class="image">
+                      <img src="airareskin.jpg" width="300" height="200" >
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                      <p>
+                        <b>Do AI models recognise rare, aggressive skin cancers? An assessment of a direct-to-consumer application in the diagnosis of Merkel cell carcinoma and amelanotic melanoma</b><br>
+                        L Steele, D Velazquez-Pimentel, and B Thomas<br>
+                        <i><b>JEADV</b>, 2020</i><br>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34242437/" target="_blank">[Paper]</a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+
+    </div>
+    <div>
+
+      <p>
+
+
+
+    </div>
+
+    </p>
+
+
+  </body>
+  </p>
+</html>
