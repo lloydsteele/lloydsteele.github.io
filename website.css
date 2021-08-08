@@ -1,0 +1,55 @@
+a.hyperlink
+{
+text-decoration: none;
+color:blue;
+font-size: 12px;
+color:black;
+font-size: 16px;
+}
+h2{
+color: #1e4f79;
+}
+
+ul ul li{
+color:black;
+font-size: 12px;
+    text-decoration:none;
+}
+ul ul li:hover{
+color:blue;
+font-size: 12px;
+    text-decoration:none;
+}
+li{
+color:black;
+font-size: 16px;
+class="hyperlink"
+text-decoration:none;
+}
+li:hover{
+color:#1e4f79;
+font-size: 20px;
+text-decoration:none;
+}
+h3
+{
+  color:#lightgray;
+  font-size: 18px;
+}
+
+h4
+{
+  color:#1e4f79;
+  font-size: 18px;
+}
+<link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/main.css" />
+<!-- STYLESHEETS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
