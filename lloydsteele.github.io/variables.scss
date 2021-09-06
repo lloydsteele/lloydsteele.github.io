@@ -1,0 +1,32 @@
+$color:#1e4f79;
+
+<style>
+title{
+color: $color;
+}
+
+ul ul li{
+color:black;
+font-size: 12px;
+    text-decoration:none;
+}
+ul ul li:hover{
+color:blue;
+font-size: 12px;
+    text-decoration:none;
+}
+li{
+color:black;
+font-size: 16px;
+text-decoration:none;
+}
+li:hover{
+color:$color;;
+font-size: 20px;
+text-decoration:none;
+}
+h3
+{
+  color:$color;
+  font-size: 18px;
+}
