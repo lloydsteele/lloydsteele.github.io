@@ -19,13 +19,23 @@
             overflow-x: auto;
         }
 
-        .column {
-            display: flex;
-            flex-direction: column;
-        }
-
         .spaced-section {
             margin-top: 2em;
+        }
+
+        .profile-header {
+            text-align: center;
+        }
+
+        .profile-header h2,
+        .profile-header h6 {
+            margin: 0;
+        }
+
+        .profile-photo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -33,26 +43,19 @@
 <body class="dark">
     <div class="container">
         <div class="row">
-            <div class="column is-2_5">
-                <figure class="image" style="width: 6rem;">
-                    <img class="is-rounded" src="minha.jpeg" width="180" height="180">
+            <div class="col-md-3 profile-header">
+                <figure class="image">
+                    <img class="is-rounded profile-photo" src="minha.jpeg" width="180" height="180">
                 </figure>
-                <h2 style="margin-top: 1em"> lloyd steele, 你好 </h2>
-                <h6> mbchb(hons) bmedsci(hons) mphil(dist) mrcp(uk)</h6>
-                <br>
-                <br>
+                <h2 style="margin-top: 1em">lloyd steele, 你好</h2>
+                <h6>mbchb(hons) bmedsci(hons) mphil(dist) mrcp(uk)</h6>
             </div>
 
-            <div class="col is-6  px-md-5">
-                <br>
-                <br>
+            <div class="col-md-9 px-md-5">
                 <h3>About Me</h3>
-                <br>
                 <p>
                     I'm a Wellcome Clinical PhD Fellow and dermatology registrar/resident. I work with Prof Muzz Haniffa and Dr Mo Lotfollahi at the Wellcome Sanger Institute and Trinity College, Cambridge. My main area of focus is machine learning in medicine.
                 </p>
-
-                <br>
                 <p>
                     I like running, listening to Frank Ocean, and learning Spanish and Portuguese.
                 </p>
